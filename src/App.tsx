@@ -20,7 +20,8 @@ import parseCube from '@/helpers/parseCube';
 const faceColorMap = ['g', 'y', 'r', 'w', 'o', 'b'];
 
 const App = () => {
-  const imageContainer = useRef<HTMLDivElement | null>(null);
+  const frontRef = useRef<HTMLDivElement | null>(null);
+  const backRef = useRef<HTMLDivElement | null>(null);
   const [device, setDevice] = useState<BluetoothDevice | undefined>();
   const [cubeState, setCubeState] = React.useState(
     'bbbbbbbbboooooooooyyyyyyyyygggggggggrrrrrrrrrwwwwwwwww',
@@ -69,19 +70,25 @@ const App = () => {
   }, [device]);
 
   useEffect(() => {
-    if (!imageContainer.current) return;
-    imageContainer.current.innerHTML = '';
+    if (!frontRef.current || !backRef.current) return;
+    frontRef.current.innerHTML = '';
     SRVisualizer.cubeSVG(
-      imageContainer.current,
-      `visualcube.php?fmt=svg&r=x-90y-120x-20&size=300&fc=${cubeState}`,
+      frontRef.current,
+      `visualcube.php?fmt=svg&r=x-90y-135x-20&size=300&fc=${cubeState}`,
+    );
+    backRef.current.innerHTML = '';
+    SRVisualizer.cubeSVG(
+      backRef.current,
+      `visualcube.php?fmt=svg&r=x-270y-225x-20&size=300&fc=${cubeState}`,
     );
   }, [cubeState]);
 
   return (
     <div className="flex justify-center align-middle h-screen">
       <div className="bg-white m-auto p-10 rounded-xl w-3/4 md:w-1/2 text-center flex flex-col">
-        <div className="m-auto">
-          <div ref={imageContainer} />
+        <div className="m-auto flex">
+          <div ref={frontRef} />
+          <div ref={backRef} />
         </div>
         {
           device ? (
