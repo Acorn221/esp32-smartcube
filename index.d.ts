@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 declare module '*.scss' {
   const css: { [key: string]: string };
   export default css;
@@ -15,8 +16,8 @@ declare module '*.gif';
 declare module '*.svg';
 
 declare global {
-  interface Window { 
-    mservice: BluetoothRemoteGATTService; 
+  interface Window {
+    mservice: BluetoothRemoteGATTService;
     mcharacteristic: BluetoothRemoteGATTCharacteristic;
     mdevice: BluetoothDevice;
   }
