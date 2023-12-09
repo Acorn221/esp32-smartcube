@@ -1,11 +1,4 @@
-# My Web Project Template
+# Xaomi smart cube web interface
 
-This template uses:
- - [x] Yarn
- - [x] Typescript
- - [x] React
- - [x] Tailwind
- - [x] Absolute Paths ('@/components/MyComponent')
- - [x] Vite
- - [x] Github Pages, For Easy Deployment
- - [x] Eslint
+## Description
+This is a web interface for the Xiaomi smart cube, which is a typescript refactor of the original [wachino](https://github.com/wachino/xiaomi-mi-smart-rubik-cube) project.
