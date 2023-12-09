@@ -6,7 +6,7 @@ import {
   connectToBluetoothDevice,
   startNotifications,
   disconnectFromBluetoothDevice,
-} from './bluetooth';
+} from './bluetooth.js';
 import {
   decrypt,
   getMove,
