@@ -17,6 +17,7 @@
     "@emotion/styled": "^11.11.0",
     "@types/web-bluetooth": "^0.0.20",
     "clsx": "^1.2.1",
+    "daisyui": "^4.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss-animatecss": "^1.0.7"
