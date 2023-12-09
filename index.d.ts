@@ -18,5 +18,6 @@ declare global {
   interface Window { 
     mservice: BluetoothRemoteGATTService; 
     mcharacteristic: BluetoothRemoteGATTCharacteristic;
+    mdevice: BluetoothDevice;
   }
 }
