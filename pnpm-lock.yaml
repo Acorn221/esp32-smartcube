@@ -38,6 +38,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  sr-visualizer:
+    specifier: ^1.0.13
+    version: 1.0.13
   tailwindcss-animatecss:
     specifier: ^1.0.7
     version: 1.0.7
@@ -3338,6 +3341,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /sr-visualizer@1.0.13:
+    resolution: {integrity: sha512-6/tivRwEttzIegF7jxtGBLpaQrYaBGNOmIpSGgp/9zYIH91rEGcpUG/TkmBqlqtxbWt6WF4y8cieUXE4V9F/Sw==}
+    dependencies:
+      svg.js: 2.7.1
+    dev: false
+
   /string.prototype.matchall@4.0.10:
     resolution: {integrity: sha512-rGXbGmOEosIQi6Qva94HUjgPs9vKW+dkG7Y8Q5O2OYkWL6wFaTRZO8zM4mhP94uX55wgyrXzfS2aGtGzUL7EJQ==}
     dependencies:
@@ -3435,6 +3444,10 @@ packages:
   /supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  /svg.js@2.7.1:
+    resolution: {integrity: sha512-ycbxpizEQktk3FYvn/8BH+6/EuWXg7ZpQREJvgacqn46gIddG24tNNe4Son6omdXCnSOaApnpZw6MPCBA1dODA==}
+    dev: false
 
   /tailwindcss-animatecss@1.0.7:
     resolution: {integrity: sha512-PSGZDYSOqRNm+C/hJTMfw1pj4nprPQfbNh/wrYDC4G0R9dqtepPncIlKAFNSl7nTUFxH9ynhvBwcIul093ceXw==}
