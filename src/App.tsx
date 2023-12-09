@@ -7,15 +7,15 @@ import {
   connectToBluetoothDevice,
   startNotifications,
   disconnectFromBluetoothDevice,
-} from './helpers/bluetooth';
+} from '@/helpers/bluetooth';
 import {
   decrypt,
   getMove,
   getState,
-} from './helpers/decode';
+} from '@/helpers/decode';
 
 import '@/index.css';
-import parseCube from './helpers/parseCube';
+import parseCube from '@/helpers/parseCube';
 
 const faceColorMap = ['g', 'y', 'r', 'w', 'o', 'b'];
 
